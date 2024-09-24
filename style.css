@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    position: relative;
+    top: -20px;
+    width: 100%;
+    background-color: #011627;
+    color: #fdfffc;
+    text-align: center;
+}
+
+.header h2 {
+    padding: 0.5em;
+    
+}
+
+div.n-queen {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    max-width: 450px;
+    top: 20%;
+    /* border: 1px solid red; */
+}
+
+.inputbox {
+    position: relative;
+    top: 1.5em;
+    bottom: 2em;
+}
+
+.numberbox {
+    width: 100%;
+    font-size: 14px;
+    padding: 4px;
+    border: none;
+    border-bottom: 2px solid #2ec4b6;
+    outline: none;
+    background: transparent;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    color: #2ec4b6;
+    font-size: 14px;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.inputbox input:focus ~ label,
+.inputbox input:disabled ~ label,
+.inputbox input:valid ~ label {
+    top: -9px;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.slider-container {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    margin: 0 auto;
+    top: 4em;
+}
+
+/* Labels for the slider */
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px; /* Add some spacing between labels and slider */
+    font-size: 14px;
+    color: #fa7921; /* Label color */
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    margin: 0 auto;
+    height: 7px;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #e8eddf 60%, #e8eddf 60%);
+    outline: none;
+}
+
+#progress-bar {
+    width: 60%;
+    height: 0px;
+    background: #ffd200;
+    border-radius: 7px;
+    position: absolute;
+    top: 7px;
+}
+
+.play-button {
+    position: relative;
+    top: 90px;
+    left: 35%;
+    border: none;
+    outline: none;
+    color: #fdfffc;
+    width: 80px;
+    height: 35px;
+    background-color: #0582ca;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.play-button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.queen-arrangement {
+    position: relative;
+    top: 200px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+
+}
+
+#n-queen-board {
+    position: relative;
+    display: flex;
+    width: 80%;
+    top: 220px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#n-queen-board div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 10px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    border-radius: 3px;
+    bottom: 10px;
+}
+
+table {
+    position: relative;
+    border-collapse: collapse;
+    margin: -10px 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+td {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+}
+
+h4 {
+    position: relative;
+    top: -5px;
+    padding: 8px;
+    width: 95%;
+    background-color: #0582ca;
+    align-self: center;
+    color: #fdfffc;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+}

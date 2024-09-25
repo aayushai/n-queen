@@ -50,3 +50,4 @@ The problem can be solved using **Backtracking**, a method where queens are plac
 ## Acknowledgements
 
 - Inspired by the classic N-Queens problem in computer science.
+
